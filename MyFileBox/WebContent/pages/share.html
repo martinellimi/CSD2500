@@ -1,0 +1,39 @@
+<!-- Share -->
+<div class="modal fade share-modal" tabindex="-1" id="share-modal"
+	role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
+	id="change-email-modal">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title">Share File</h4>
+			</div>
+			<div class="modal-body" style="height: 140px; overflow: visible;">
+				<form class="form-horizontal">
+					<div class="form-group" id="shareLabel">
+						<label class="col-sm-3 control-label">Send this file to: </label>
+					</div>
+					<div class="form-group" >
+						<div class="col-sm-12">
+							<input type="email" class="form-control"
+								placeholder="Email" id="emailInput">
+						</div>
+					</div>
+					<div class="form-group" id="messageLabel">
+						<div class="col-sm-12">
+							<textarea class="form-control" placeholder="Message" id="messageInput"></textarea>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer" style="margin-top: 100px;">
+				<button type="button" class="btn btn-default"
+					data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary" id="buttonShare">Share</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END -->

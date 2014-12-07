@@ -1,0 +1,255 @@
+@font-face
+{
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Droid Sans'), local('DroidSans'), url('../droid-sans.woff') format('woff');
+}
+ 
+@font-face
+{
+    font-family: 'Droid Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Droid Sans Bold'), local('DroidSans-Bold'), url('../droid-sans-bold.woff') format('woff');
+}
+ 
+body, div, p, h1, h2, h3, h4, h5, h6
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-weight: normal;
+}
+ 
+body
+{
+    font-family: 'Droid Sans';
+    font-size: 11pt;
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/wallpaper-white.png');
+}
+#siteHolder
+{
+    width: 100%;
+    min-width: 980px;
+    background-color: #FFF;
+    box-shadow: 0 0 50px #999;
+    position: relative;
+    top: 0;
+}
+
+#pageHeader
+{
+    background-color: #293F66;
+    color: #F8F8F9;
+    height: 60px;
+    width: 100%;
+    min-width: 980px;
+    position: fixed;
+    z-index: 998;
+    top: 20px;
+    font-family: Arial;
+    font-size: 11pt;
+}
+
+	#pageHeader h1
+    {
+        font-family: Impact;
+        font-size: 15pt;
+        font-weight: normal;
+        margin: 0;
+        opacity: 0.9;
+        position: absolute;
+        top: 3px;
+        left: 10px;
+    }
+
+	#pageHeader .userInfo
+    {
+        position: absolute;
+		top: 0;
+		right: 0;
+		text-align: left;
+		font-size: 10pt;
+		float: right;
+		width: 130px;
+		margin-top: 15px;
+		cursor: pointer;
+    }
+    
+    #pageHeader .options 
+    {
+    	display: none;
+		width: 150px;
+		margin-top: 50px;
+		z-index: 1000;
+		height: 100px;
+		float: right;
+		border: 2px solid rgb(41, 63, 102);
+		background-color: rgb(255, 255, 255);
+		color: black;
+    }
+ 
+        #pageHeader #userInfo span
+        {
+            position: relative;
+            top: 2px;
+        }
+        
+#footerBar
+{
+    background-color: #3C454F;
+    color: #F8F8F9;
+    height: 60px;
+    width: 90%;
+    min-width: 980px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0px;
+}
+
+#mainContent {
+	position: fixed;
+	z-index: 997;
+	top: 80px;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	font-family: Arial;
+    font-size: 11pt;
+}
+
+#fileContent {
+	background-color: #FFF;
+	height: 80%;
+	width: 80%;
+	margin-top: 2%;
+	margin-left: 10%;
+	box-shadow: 0 0 50px #999;
+	border-radius: 10px;
+	overflow: auto;
+}
+
+
+/* CSS for the slide image - Start */
+
+.active{
+	z-index:99;
+}
+    
+#slideshow {
+    position: fixed;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+#slideshow IMG {
+    /*position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    width: 20%;
+	height: 30%;
+	margin: 20%;
+	*/
+	background-image: url('../images/wallpaper-white.png');
+	/*height: 47%;*/
+	position: fixed;
+	width: 35%;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+#loginbox {
+	position: absolute;
+	margin-left: 50%;
+	margin-top: 9.5%;
+	border-style: solid;
+	border-width: 2px;
+	padding: 2%;
+	background-color: #FFF;
+	box-shadow: 0 0 50px #999;
+	border-radius: 10px;
+	width: 38%;
+	border-color: #293F66;
+	color: #184271
+}
+
+/* END */
+
+#home {
+    width: 40px;
+    height: 25px;
+    background: url(../images/icons.png) 0 2827px; 
+    background-size: 140%;
+}
+
+#edit {
+    width: 40px;
+    height: 25px;
+    background: url(../images/icons.png) 0 2827px; 
+    background-size: 140%;
+}
+
+#titleheader {
+	margin-top: 3%;
+	margin-left: 4%;
+	padding-bottom: 2%;
+	border-style: solid;
+	border-width: 0 0 1px;
+	margin-right: 4%;
+	border-color: rgb(205, 201, 201);
+	color: grey;
+}
+
+.form-group.settings {
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+#fileContent .title {
+	color: grey;
+	margin-bottom: 1.5%;
+	font-size: 13px;
+}
+
+.column300size {
+	width: 300px;
+}
+
+.ui-dialog { 
+	z-index: 1000 !important ;
+}
+
+.modal-body {
+    overflow-y: hidden;
+    height: 100%;
+    max-height:190px;
+    width: 100%;
+}
+
+.alert.alert-danger.validation {
+	padding-bottom: 3px;
+	padding-top: 5px;
+	font-family: arial;
+	font-size: 10.5pt;
+}
+
+.modal {
+	margin-top: 6%; 
+	width: auto;
+}
+
+.form-horizontal h3{
+	display: inline; 
+	color: #3071a9;
+	font-size: 28px;
+}
